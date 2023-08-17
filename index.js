@@ -67,4 +67,26 @@ var subArrayNumeros = arrNumeros.slice(2,4);
 console.log(arrNumeros, subArrayNumeros);       // Foi copiado os índices 2(3) e 3(4), lembrando que o 4(5) não é incluído.
 
 
-// copie a arrNumeros 
+// -------------------------------------//
+
+
+// 3. Método filter()
+
+//O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+// método filter() é usado em arrays para criar um novo array contendo apenas os elementos que atendem a um determinado critério definido por uma função de teste. Essa função de teste é chamada de "callback" e é aplicada a cada elemento do array. Se o resultado da função for true, o elemento será incluído no novo array. Caso contrário, o elemento será excluído.
+
+// exemplo 1
+
+const arrAnimais = ["Cavalo","Gato","Coelho","Cachorro","Tigre","Leão"];
+
+const arrAnimaisLength = arrAnimais.filter((palavra) => palavra.length >= 6)  // filtre somente as palavras que tenham comprimento maior ou igual a 6.
+
+console.log(arrAnimaisLength);
+
+//exemplo 2
+
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+
+const numerosImpares = numeros.filter(numero => numero % 2 != 0)
+console.log(numerosImpares);
